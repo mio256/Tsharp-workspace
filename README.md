@@ -1,8 +1,6 @@
 My workspace.
 
-It's true.
-<a href="
-https://github.com/Tsharp-lang/Tsharp">Official Tsharp</a>
+It's true →<a href="https://github.com/Tsharp-lang/Tsharp">Official Tsharp</a>
 
 <div align="center">
     <a href="https://github.com/Tsharp-lang/Tsharp/blob/main/DOC/docs.md">Docs</a>
