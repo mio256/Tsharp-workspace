@@ -1,0 +1,52 @@
+block dclone do
+    -> tmpa
+    swap
+    -> tmpb
+    swap
+    tmpb
+    tmpa
+end
+
+1 print
+2 print
+3 print
+
+4 for dup 10000 < do
+    -> a
+    1 -> flag drop
+    if dup 2 % 0 == do
+        0 -> flag drop
+    else
+        if dup 3 % 0 == do
+            0 -> flag drop
+        else
+            if dup 5 % 0 == do
+                0 -> flag drop
+            else
+                if dup 7 % 0 == do
+                    0 -> flag drop
+                else
+                    if dup 11 % 0 == do
+                        0 -> flag drop
+                    else
+                        if dup 13 % 0 == do
+                            0 -> flag drop
+                        else
+                            2 for dup a < do
+                                call dclone
+                                if % 0 == do
+                                    0 -> flag drop
+                                end
+                                inc
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    if flag 1 == do
+        print
+    end
+    inc
+end

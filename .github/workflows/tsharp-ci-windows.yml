@@ -1,0 +1,19 @@
+name: Windows
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  Windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: sh build.sh
+      run: sh build.sh
+    - name: run
+      run: .\main.exe test\ci-test.t#
+    - name: clean
+      run: Del "main.exe"

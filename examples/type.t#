@@ -1,0 +1,15 @@
+
+string
+
+int
+
+bool
+
+0
+
+for dup 3 < do
+    swap print
+    1 +
+end
+
+"Hello World!" typeof print

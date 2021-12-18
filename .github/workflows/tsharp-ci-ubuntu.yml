@@ -1,0 +1,19 @@
+name: Ubuntu
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: sh build.sh
+      run: sh build.sh
+    - name: run
+      run: ./main test/ci-test.t#
+    - name: clean
+      run: rm main;

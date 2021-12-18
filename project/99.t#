@@ -1,0 +1,24 @@
+block dclone do
+    -> tmpa
+    swap
+    -> tmpb
+    swap
+    tmpb
+    tmpa
+end
+
+1 for dup 10 < do
+    1 for dup 10 < do
+        call dclone
+        *
+        if dup 10 < do
+            " " puts
+        end
+        puts
+        " " puts
+        inc
+    end
+    " " print
+    drop
+    inc
+end

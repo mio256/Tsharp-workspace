@@ -1,0 +1,14 @@
+
+"What is your name? " puts
+
+input
+
+"Hello " puts dup puts "👋" print
+
+"How old are you? " puts
+
+input
+
+swap
+
+puts " is " puts puts " years old " print

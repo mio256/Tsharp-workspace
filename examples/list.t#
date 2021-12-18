@@ -1,0 +1,29 @@
+
+# List example 1
+["T#", "Ruby", "Python", "C", "Go", "Julia", "V", ["HTML", "CSS"]]
+
+0
+for dup 7 <= do
+    dup -> i drop
+    swap -> x
+    if x[i] typeof list == do
+        x[i][0] print
+        x[i][1] print
+    else
+        x[i] print
+    end
+    swap
+    inc
+end drop drop
+
+
+# List example 2
+["T#", "Ruby", "Python", "C", "Go", "Julia"] dup print
+
+"V" append dup print
+
+["HTML"] append dup print
+
+"CSS" append[7]
+
+print

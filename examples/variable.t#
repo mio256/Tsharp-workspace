@@ -1,0 +1,7 @@
+
+10 -> x drop
+
+x -> y drop
+
+y print
+

@@ -1,0 +1,19 @@
+
+1
+for dup 100 <= do
+    if dup 3 % 0 == do
+        if dup 15 % 0 == do
+            "FizzBuzz" print
+        else
+            "Fizz" print
+        end
+    else
+        if dup 5 % 0 == do
+            "Buzz" print
+        else
+            dup print
+        end
+    end
+    inc
+end drop
+
