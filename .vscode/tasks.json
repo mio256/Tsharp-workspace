@@ -1,0 +1,17 @@
+{
+    // Simple T# Runner    ver 1.0.0
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "T# runner",
+            "type": "shell",
+            "command": "./main",
+            "args": ["${file}"],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
