@@ -1,6 +1,6 @@
 My workspace.
 
-It's is ture.
+It's true.
 <a href="
 https://github.com/Tsharp-lang/Tsharp">Official Tsharp</a>
 
